@@ -1,6 +1,10 @@
-//  Primitive
+//kaise data memory mai rakha jata hai or kaise access kiya jata hai. wo 2 type se hote hain.. 
+// primitive or non-primitive
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  Primitive (call by value => copy)
+
+//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt 
+//null ---AC temp jab server se lana tha to jab temp nahi aaya tha to wo 0 nahi tha wo null tha.
 
 const Score =100
 const scoreValue =110.3
@@ -10,23 +14,25 @@ const outsideTemp = null
 let userEmail; //undefined
 //let userEmail = undefined
 
+//********************************* symbol**************************************************
+
  const id =  Symbol('789')
  const anotherId= Symbol('789')
+ //console.log(id === anotherId); //false(not same)
 
- //console.log(id === anotherId);
+//*********************************BIG INT**************************************************
  
- const bigNumber = 46679586084425246n
+ const bigNumber = 46679586084425246n  //why n?
 //  console.log(bigNumber);
  
 
- //Reference (Non primitive)
-
+ //Reference (Non primitive => call by refrence)
  // Array, Objects, Functions
 
  const heros = ["peter parker", "Shaktimaan", "doga"];
 //  console.log(heros);
  
- //obj
+ //obj => always in key-value pair
 let myObj = {
     name: "Happy",
     age: 25,
@@ -45,9 +51,14 @@ const myFunction =function() {
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
-// *******************************************************
+// *********************************************************************************************************
 
-//Stack (Primitive) -> Copy, Heap (Non-Primitive) ->refrence or original
+
+
+
+//*****************************MEMORY*************************************************************************
+//Stack (Primitive) -> Copy, 
+//Heap (Non-Primitive) ->refrence or original
 
 let myYoutubeName = "TechnicalDadaJii"
 
@@ -65,7 +76,7 @@ let user1 ={
 
 let user2 =user1;
 
-user2.email = "yahoo@window.com"
+user2.email = "yahoo@window.com" //(not copy )
 
 console.log(user1.email);
 console.log(user2.email);
