@@ -6,6 +6,7 @@ function sayMyName(){
     console.log("P");
     console.log("Y");
     console.log("Y");
+    //1000 times same work
 }
 
 // sayMyName()
@@ -15,7 +16,7 @@ function sayMyName(){
 //     console.log(number1 + number2);
 // }
 
-function addTwoNumbers(number1, number2){
+function addTwoNumbers(number1, number2){ //with return
 
     // let result = number1 + number2
     // return result
