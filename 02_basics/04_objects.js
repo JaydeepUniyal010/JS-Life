@@ -61,7 +61,7 @@ users[1].email
 
 // console.log(tinderUser.hasOwnProperty('isLoggedIn')); //check value or not? //important
 
-
+//************************************ De-structure ***************************************************
 const course = {
     coursename: "javascript",
     price: "999",
@@ -71,7 +71,7 @@ const course = {
 // course.courseInstructor
 //clean code
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course //custom naming
 
 // console.log(courseInstructor);
 console.log(instructor);
