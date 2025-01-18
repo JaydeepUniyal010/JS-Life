@@ -11,10 +11,16 @@ function sayMyName(){
 
 // sayMyName()
 
+
+
+
 // function addTwoNumbers(number1, number2){
 
 //     console.log(number1 + number2);
 // }
+
+
+
 
 function addTwoNumbers(number1, number2){ //with return
 
@@ -28,7 +34,7 @@ const result = addTwoNumbers(3, 5)
 // console.log("Result: ", result);
 
 
-function loginUserMessage(username = "jay"){
+function loginUserMessage(username = "jay"){ //default value
     if(!username){
         console.log("PLease enter a username");
         return
@@ -37,14 +43,14 @@ function loginUserMessage(username = "jay"){
 }
 
 // console.log(loginUserMessage("happy"))
-// console.log(loginUserMessage("happy"))
+// console.log(loginUserMessage("happy"))  //override value with jay
 
-
-function calculateCartPrice(val1, val2, ...num1){
+//******************* for unlimited parameter**********************************
+function calculateCartPrice(val1, val2, ...num1){ //rest operator/ ...num1?
     return num1
 }
-//... khudra vikreta
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+//... khudra vikreta (rest operator) ***
+// console.log(calculateCartPrice(200, 400, 500, 2000)) //saman liye 
 
 
 const user = {
@@ -57,7 +63,7 @@ function handleObject(anyobject){
 }
 
 // handleObject(user)
-handleObject({
+handleObject({ //direct object
     username: "hpy",
     price: 399
 })
@@ -69,4 +75,4 @@ function returnSecondValue(getArray){
 }
 
 // console.log(returnSecondValue(myNewArray));
-console.log(returnSecondValue([200, 400, 500, 1000]));
+console.log(returnSecondValue([200, 400, 500, 1000])); //direct 
