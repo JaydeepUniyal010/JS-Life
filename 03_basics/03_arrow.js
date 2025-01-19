@@ -5,46 +5,48 @@ const user = {
     price: 999,
 
     welcomeMessage: function() {
-        console.log(`${this.username} , welcome to website`);
+        console.log(`${this.username} , welcome to website`); //this ==> current context
         //console.log(this);
     }
 
 }
 
 // user.welcomeMessage()
-// user.username = "goldy"
+// user.username = "goldy"  //change value
 // user.welcomeMessage()
 
-//console.log(this);
+//console.log(this); //node vs browser
 
 // function chai(){
 //     let username = "happy"
-//     console.log(this.username);
+//     console.log(this.username); //not use this in function ===? undefined
 // }
 // chai()
 
 //  const chai = function () {
 //     let username = "happy"
-//     console.log(this.username);
+//     console.log(this.username); //undefined
 //  }
 
-//const chai =  () => {
+//const chai =  () => { //arrow
 //    let username = "happy"
-//    console.log(this);
+//    console.log(this); // {} 
 // }
 
 // chai()
 
-//  const addTwo = (num1, num2) => {
+//arrow function syntax ==> () =>{}
+
+//  const addTwo = (num1, num2) => { //arrow function
 //     return num1 + num2
 // }
 
 //implicit return
 //const addTwo = (num1, num2) =>  num1 + num2
 
-//const addTwo = (num1, num2) => ( num1 + num2 )
+//const addTwo = (num1, num2) => ( num1 + num2 ) // not return keyword
 
-const addTwo = (num1, num2) => ({username: "happy"})
+const addTwo = (num1, num2) => ({username: "happy"}) //object 
 
 
 console.log(addTwo(3, 4))
