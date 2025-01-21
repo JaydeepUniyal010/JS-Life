@@ -10,6 +10,8 @@
 //  }
 
 //console.log("Execute");
+
+//************************ conditional condition************************************************
 // <, >, <=, >=, ==, !=, ===, !==
 
 //const score = 200
@@ -26,13 +28,15 @@
 
  //if (balance > 500) console.log("test"),console.log("test2"); //implict scope (never do this type of code)
 
+
+// ********************Nesting Condition ********************************
 //  if (balance < 500) {
 //     console.log("less than 500");
 //  } else if (balance < 750) {
 //      console.log("less than 750");
     
 //  } else if (balance < 900) {
-//     console.log("less than 750");
+//     console.log("less than 900");
     
 //  } else {
 //     console.log("less than 1200");
@@ -40,7 +44,7 @@
 //  }
 
 
-//real life example
+//real life example ***********************************
 
 const userLoggedIn = true
 const debitCard = true
